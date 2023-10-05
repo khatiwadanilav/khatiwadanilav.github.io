@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Testing Google Analytics</title>
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to the Website</h1>  
-        <p>Just For Testing the Google Analytics 4!</p>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Testing Google Analytics</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0N0MRJNX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-NH0N0MRJNX');
+  </script>
+
+</head>
+
+<body>
+  <main>
+    <h1>Welcome to the Website</h1>
+    <p>Just For Testing the Google Analytics 4!</p>
+
+    <div class="md5-class">
+      <form id="custom-form-id" , action="/thankyou.html">
+        <p>"This is a demo of custom events"</p>
+        <div class="button submit class">
+          <label for="username" class="visually-hidden">User Name: </label>
+          <input id="username" name="uname" type="text" placeholder="Username"><br><br>
+          <button class="btn-class-sub" type="submit">Submit</>
+        </div>
+      </form>
+    </div>
+
+  </main>
+</body>
+
 </html>
