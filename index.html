@@ -13,7 +13,12 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-NH0N0MRJNX');
+    gtag('config', 'G-NH0N0MRJNX', {
+      'custom_empty_parameter': '',
+      'custom_event_parameter': 'event_parameter_value',
+      'custom_null_parameter': null,
+      'custom_value_parameter': 'value value value',
+    });
     gtag('event', 'custom_event_from_UI', {
       'custom_transaction': '',
       'custom_event_parameter': 'event_parameter_value'
