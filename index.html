@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home Page</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0N0MRJNX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-NH0N0MRJNX')
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,25 +26,25 @@
 
     <div class="button-div">
       <div class="button-group">
-          <span class="button-description" > Redirect to Get Conversions Parameters </span>
-          <button class="button button-redirect" onclick="redirectToPage('conversion.html')"> Redirect </button>
+        <span class="button-description"> Redirect to Get Conversions Parameters </span>
+        <button class="button button-redirect" onclick="redirectToPage('conversion.html')"> Redirect </button>
       </div>
 
       <div class="separator"></div>
 
       <div class="button-group">
-          <span class="button-description" > Redirect to Get Events Parameters </span>
-          <button class="button button-redirect" onclick="redirectToPage('event.html')"> Redirect </button>
+        <span class="button-description"> Redirect to Get Events Parameters </span>
+        <button class="button button-redirect" onclick="redirectToPage('event.html')"> Redirect </button>
       </div>
 
       <div class="separator"></div>
 
       <div class="button-group">
-          <span class="button-description" > Redirect to associate userId </span>
-          <button class="button button-redirect" onclick="redirectToPage('userId.html')"> Redirect </button>
+        <span class="button-description"> Redirect to associate userId </span>
+        <button class="button button-redirect" onclick="redirectToPage('userId.html')"> Redirect </button>
       </div>
-  </div>
-  <script src="js/script.js"></script>
+    </div>
+    <script src="js/script.js"></script>
   </main>
 </body>
 
