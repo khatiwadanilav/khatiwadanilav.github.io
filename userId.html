@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User ID Form</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0N0MRJNX"></script>
+    <script src="js/userId.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="background-div"></div>
+    <h1 class="signup">Generate User ID For GA</h1>
+    <div class="userid-form-div">
+        <form id="userForm">
+            <input type="text" id="username" name="username" placeholder="Enter any value" required><br><br>
+            <input type="submit" value="Submit" , class="submitBtn">
+        </form>
+    </div>
+
+    <div id="user-id-popup" class="popup">
+        <div class="popup-content">
+            <img class="tick-img" src="css/pic/tick.png">
+            <h2>Success!!</h2>
+            <p class="popup-message">UserId: {{user_id}}</p>
+            <p class="popup-message">Check Google Analytics. Thanks!!!</p>
+            <button class="close-button" onclick="closePopup()"> Close </button>
+        </div>
+    </div>
+
+
+    <div class="button-div">
+        <button class="button" onclick="goToHomePage()">Go Back</button>
+    </div>
+</body>
+</html>

@@ -5,71 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Testing Google Analytics</title>
-
+  <title>Home Page</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NH0N0MRJNX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
-
-    gtag('config', 'G-NH0N0MRJNX', {
-      'custom_empty_parameter': '',
-      'custom_event_parameter': 'event_parameter_value',
-      'custom_null_parameter': null,
-      'custom_value_parameter': 'value value value',
-    });
-    gtag('event', 'custom_event_for_conversion_1', {
-      'custom_attribute_first_1': 'first custom attribute for conversion 1',
-      'custom_attribute_first_2': 'second custom attribute for conversion 1',
-      'custom_attribute_first_3': 'third custom attribute for conversion 1'
-    });
-    gtag('event', 'custom_event_for_conversion_2', {
-      'custom_attribute_second_1': 'first custom attribute for conversion 2',
-      'custom_attribute_second_2': 'second custom attribute for conversion 2',
-      'custom_attribute_second_3': 'third custom attribute for conversion 2'
-    });
-    gtag('event', 'custom_event_for_event_1', {
-      'custom_event_attribute_1': 'first custom attribute for event',
-      'custom_event_attribute_2': 'second custom attribute for event',
-      'custom_event_attribute_3': 'third custom attribute for event'
-    });
+    gtag('config', 'G-NH0N0MRJNX')
   </script>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59BWNGND"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <div class="background-div"></div>
   <main>
-    <h1>Welcome to the Website</h1>
-    <p>Just For Testing the Google Analytics 4!</p>
+    <h1> Testing Google Analytics</h1>
 
-    <div class="md5-class">
-      <form id="custom-form-id" , action="/thankyou.html">
-        <p>"This is a demo of custom events"</p>
-        <div class="button submit class">
-          <label for="username" class="visually-hidden">User Name: </label>
-          <input id="username" name="uname" type="text" placeholder="Username"><br><br>
-          <button class="btn-class-sub" type="submit">Submit</>
-        </div>
-      </form>
+    <div class="button-div">
+      <div class="button-group">
+        <span class="button-description"> Redirect to Get Conversions Parameters </span>
+        <button class="button button-redirect" onclick="redirectToPage('conversion.html')"> Redirect </button>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="button-group">
+        <span class="button-description"> Redirect to Get Events Parameters </span>
+        <button class="button button-redirect" onclick="redirectToPage('event.html')"> Redirect </button>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="button-group">
+        <span class="button-description"> Redirect to associate userId </span>
+        <button class="button button-redirect" onclick="redirectToPage('userId.html')"> Redirect </button>
+      </div>
     </div>
-
-    <div class="cross-domain-class-class">
-      <form action="">
-        <button class="btn-class-sub" type="submit">Redirect</>
-      </form>
-    </div>
-
-    <div class="no-cross-class-class">
-      <form action="https://www.apple.com/">
-        <button class="btn-class-sub" type="submit">Apple</>
-      </form>
-    </div>
-
+    <script src="js/script.js"></script>
   </main>
 </body>
 

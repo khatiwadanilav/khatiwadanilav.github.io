@@ -1,0 +1,251 @@
+.background-div {
+  background-image:url('pic/pxfuel.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  overflow: hidden;
+  filter: blur(7px); 
+}
+
+h1 {
+  color: rgb(255, 251, 251); 
+  font-size: 36px; 
+  font-weight: bold; 
+  text-align: left; 
+}
+  
+.button-div {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.button-description {
+  /* flex: 1; */
+  left: calc(30% + 10px); 
+  font-size: 25px;
+  color: #fffbfb; 
+  /* color: #FFFFFF;  */
+  position: absolute;
+  font-weight: bold;
+}
+
+.button {
+  /* flex: 1; */
+  padding: 12px 12px;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #2170c4; 
+  color: #efe5e5; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  order: 1;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.button-redirect {
+  left: calc(70% + 10px); 
+}
+
+.separator {
+  border-top: 2px solid #6e6969; 
+  height: 20px; 
+  width: 100%; 
+}
+
+/* userId.html */
+.userid-form-div{
+  text-align: center;
+  margin: 0;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+form {
+  border: 2px solid #ccc;
+  padding: 30px;
+  background: linear-gradient(to bottom, #ddd, #999); 
+  color: #333; /* Set text color to dark gray */
+  margin: auto;
+  width: 20%;
+  height: 20%;
+}
+
+.submitBtn {
+  background-color: rgb(142, 14, 14); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: green;
+}
+
+.signup {
+  margin-bottom: 20px; /* Optional: Add bottom margin to create space between heading and form */
+  /* Additional styling specific to the "Sign Up" heading within the form */
+}
+
+/* Ensure input elements are sized relative to their parent container */
+.userid-form-div input[type="text"],
+.userid-form-div input[type="submit"] {
+  width:70%; /* Set input width to 80% of the form's width */
+  padding: 10px; /* Add padding to input elements and button */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  position: relative;
+}
+
+
+/* popup style */
+
+.popup {
+  display: none;
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 30px 30px;
+  z-index: 1;
+}
+
+.popup.show-popup {
+display: block; /* Show the popup when the show-popup class is added */
+}
+
+.popup img {
+width: 100px;
+height: 100px;
+margin-top: -50px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 1, 0.2);
+}
+
+.popup h2{
+font-size: 40px;
+font-weight: 500;
+margin: 30px 0 10px;
+}
+
+.popup-content {
+text-align: center;
+}
+
+.popup-icon {
+font-size: 6px;
+top: 2%;
+text-align: center;
+}
+
+.popup-message {
+padding: 1px;
+font-size: 15px;
+color: #281e1e;
+}
+
+.close-button {
+background-color: #4CAF50; /* Green color */
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+width: 90%; /* Set the width to 100% to span the entire width of the popup */
+height: 100%; 
+display: inline-block;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.close-button:hover {
+background-color: #45a049; /* Darker green color */
+}
+
+body.blur-background {
+backdrop-filter: blur(100px); /* Adjust the blur intensity as needed */
+}
+
+
+/* Table styling */
+table {
+width:60%; /* Set the width of the table */
+padding: 10px; /* Add padding to the table */
+border-collapse: collapse; /* Separate borders between cells */
+position: relative;
+background-color: #172d3c;
+left: 50%;
+transform: translateX(-50%);
+margin-top: 3%; /* Add space above the container (5% of the screen height) */
+margin-bottom: 5%; /* Add space below the container (5% of the screen height) */
+}
+
+/* Set border for table header cells */
+th {
+border: None; /* Set border of header cells */
+padding: 10px 20px;
+background-color: #4c8ab1;
+color: #fff;
+font-size: large;
+}
+
+td {
+/* border: 0.5px outset rgb(219, 192, 192); */
+text-align: center;
+padding: 5px 0 5px 5px; /* Top, Right, Bottom, Left */
+}
+
+td:nth-child(2) {
+width: 35%; /* Adjust the width as needed */
+}
+
+td.column1-first {
+text-align: center; /* Align text in the first cell of the first column to left */
+padding-left: 0%;
+}
+
+/* Apply margin or padding to list items to create spacing */
+ul {
+text-align: left; /* Reset text alignment for list items */
+margin: 0;
+padding: 1%;
+/* list-style-position: inside; Move bullet points inside the list items */
+}
+
+li {
+margin-bottom: 10px; /* Adjust the spacing as needed */
+padding: 2%;
+list-style-position: inside;
+}
