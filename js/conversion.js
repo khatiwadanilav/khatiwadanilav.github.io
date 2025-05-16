@@ -26,7 +26,7 @@ function checkAndAppendUserId() {
 }
 
 function appendConversionEvents() {
-  gtag('event', 'payment_completed', {
+  gtag('event', '支払い完了', {
     'payment_id': 'azn-order-1234',
     'payment_method': 'cash',
     'payment_amount': '5000¥'
