@@ -28,7 +28,7 @@ function checkAndAppendUserId() {
 function appendConversionEvents() {
   gtag('event', '支払い完了', {
     'payment_id': 'azn-order-1234',
-    'payment_method': 'cash',
+    'payment_method': '現金',
     'payment_amount': '5000¥'
   });
 
@@ -48,7 +48,7 @@ function appendConversionEvents() {
 
 function getConversionDataForTable() {
   return [
-    { column1: 'payment_completed', column2: ["payment_id", "payment_method", "payment_amount"], column3: ["azn-order-1234", "cash", "5000¥"] },
+    { column1: '支払い完了', column2: ["payment_id", "payment_method", "payment_amount"], column3: ["azn-order-1234", "現金", "5000¥"] },
     { column1: 'order_placed', column2: ["order_id", "order_method", "order_amount"], column3: ["rk-order-9999", "Credit Card", "1599¥"] },
     { column1: 'post_liked', column2: ["post_content", "post_url", "post_time"], column3: ["Article of GA4", "https://google.com", "2024-03-25"] },
   ];
